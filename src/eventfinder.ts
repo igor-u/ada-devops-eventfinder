@@ -7,6 +7,7 @@ enum TipoEvento {
 type Evento = {
     id: string;
     titulo: string;
+    descricao: string;
     data: Date;
     tipo: TipoEvento;
     ingressos: Ingresso[];

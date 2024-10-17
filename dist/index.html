@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Finder</title>
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
-    <script src="js/eventfinder.js"></script>
+    <header class="top-container">
+        <div class="top-container_top-line flex">
+            <img src="assets/logo-eventfinder.svg" alt="Event Finder">
+            <div class="login">
+                <button>Sign in</button>
+                <button>Sign up</button>
+            </div>
+        </div>
+
+        <section class="top-container_info">
+
+            <p>Facilite a gestão de eventos, reservas e vendas de ingressos.</p>
+            <div class="search">
+                <img src="/dist/assets/search.svg">
+                <input type="text" class="barra-de-procura" placeholder="Procurar eventos">
+            </div>
+        </section>
+
+    </header>
+    <main class="container-padding flex">
+
+        <main class="container-padding flex">
+            <nav class="menu">
+                <a href="#" class="title">Categorias</a>
+                <a href="#">Musical</a>
+                <a href="#">Palestra</a>
+                <a href="#">Teatro</a>
+                <a href="#">Workshop</a>
+            </nav>
+
+            <section class="criar-evento">
+                <h2>Criar evento</h2>
+                <form action="" method="post" novalidate>
+                    <div class="campo">
+                        <label for="titulo">Título:</label><br>
+                        <input type="text" name="titulo" id="titulo" class="campo-input" placeholder="Título"
+                            required />
+                    </div>
+
+                    <form action="" method="post" novalidate>
+                        <div class="campo">
+                            <label for="descricao">Descrição:</label>
+                            <br>
+                            <input type="text" name="descricao" id="descricao" class="campo-input"
+                                placeholder="Descrição" required />
+                        </div>
+
+                        <div class="campo">
+                            <label for="tipoEvento">Tipo:</label>
+                            <br>
+                            <select name="tipoEvento" id="tipoEvento" class="campo-input" required>
+                                <option value="" disabled selected>Selecione o tipo de evento</option>
+                                <option value="Presencial">Presencial</option>
+                                <option value="Remoto">Remoto</option>
+                                <option value="Híbrido">Híbrido</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Data:</label><br>
+                            <input type="date" name="data" id="data" class="campo-input" required />
+                        </div>
+                        <div class="campo">
+                            <button type="submit" class="submit-button">
+                                Finalizar
+                            </button>
+
+                        </div>
+                    </form>
+            </section>
+
+            </div>
+
+        </main>
+        <script src="js/eventfinder.js"></script>
 </body>
+
 </html>

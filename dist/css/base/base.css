@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --fonte-tamanho-padrao: 16px;
+    --fonte-t1: 24px;
+    --fonte-t2: 20px;
+    --fonte-t3: 14px;
+    --cor-primaria: #FFF;
+    --cor-secundaria: #17336e;
+    --cor-secundaria-light: #275bca;
+    --cor-terciaria: #121218;
+    --cor-quaternaria: #777777;
+    --gradiente: linear-gradient(to right, #275bca, #17336e);
+    --border-radius: 4px;
+
+    --largura-padrao: 1800px;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    font-size: var(--fonte-tamanho-padrao);
+    color: var(--cor-primaria);
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: var(--cor-terciaria);
+    overflow-x: hidden;
+    padding-bottom: 24px;
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-padding {
+    padding-left: calc((100% - var(--largura-padrao)) / 2);
+    padding-right: calc((100% - var(--largura-padrao)) / 2);
+
+    @media (max-width: 1200px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+main.flex {
+    align-items: stretch;
+}
+
+.criar-evento {
+    flex-grow: 1;
+}
