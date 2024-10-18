@@ -7,10 +7,10 @@
     --fonte-t2: 20px;
     --fonte-t3: 14px;
     --cor-primaria: #FFF;
-    --cor-secundaria: #17336e;
+    --cor-secundaria: #244fad;
     --cor-secundaria-light: #275bca;
     --cor-terciaria: #121218;
-    --cor-quaternaria: #777777;
+    --cor-quaternaria: #aaaaaa;
     --gradiente: linear-gradient(to right, #275bca, #17336e);
     --border-radius: 4px;
 
@@ -67,8 +67,4 @@ a {
 
 main.flex {
     align-items: stretch;
-}
-
-.criar-evento {
-    flex-grow: 1;
 }

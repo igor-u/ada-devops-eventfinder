@@ -22,7 +22,7 @@
 
             <p>Facilite a gestão de eventos, reservas e vendas de ingressos.</p>
             <div class="search">
-                <img src="/dist/assets/search.svg">
+                <img src="assets/search.svg">
                 <input type="text" class="barra-de-procura" placeholder="Procurar eventos">
             </div>
         </section>
@@ -42,34 +42,32 @@
             <section class="criar-evento">
                 <h2>Criar evento</h2>
                 <form action="" method="post" novalidate>
-                    <div class="campo">
-                        <label for="titulo">Título:</label><br>
-                        <input type="text" name="titulo" id="titulo" class="campo-input" placeholder="Título"
+                    <div class="campo form-floating">
+                        
+                        <input type="text" name="titulo" id="titulo" class="campo-input form-control" placeholder="Título"
                             required />
+                            <label for="titulo">Título</label>
                     </div>
 
                     <form action="" method="post" novalidate>
-                        <div class="campo">
-                            <label for="descricao">Descrição:</label>
-                            <br>
-                            <input type="text" name="descricao" id="descricao" class="campo-input"
+                        <div class="campo form-floating">
+                            <input type="text" name="descricao" id="descricao" class="campo-input form-control"
                                 placeholder="Descrição" required />
+                                <label for="descricao">Descrição</label>
                         </div>
 
-                        <div class="campo">
-                            <label for="tipoEvento">Tipo:</label>
-                            <br>
-                            <select name="tipoEvento" id="tipoEvento" class="campo-input" required>
-                                <option value="" disabled selected>Selecione o tipo de evento</option>
+                        <div class="campo form-floating">
+                            <select name="tipoEvento" id="tipoEvento" class="campo-input form-select" required>
                                 <option value="Presencial">Presencial</option>
                                 <option value="Remoto">Remoto</option>
                                 <option value="Híbrido">Híbrido</option>
                             </select>
+                            <label for="tipoEvento">Tipo</label>
                         </div>
 
-                        <div class="campo">
-                            <label for="data">Data:</label><br>
-                            <input type="date" name="data" id="data" class="campo-input" required />
+                        <div class="campo form-floating">
+                            <input type="date" name="data" id="data" class="campo-input form-select" required />
+                            <label for="data">Data</label>
                         </div>
                         <div class="campo">
                             <button type="submit" class="submit-button">

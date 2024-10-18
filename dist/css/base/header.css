@@ -3,7 +3,7 @@
     color: var(--cor-secundaria);
     font-size: var(--fonte-t3);
     padding-block: 20px;
-    padding: 10px 16px 48px 10px;
+    padding: 10px 10px 48px 10px;
     margin-bottom: 24px;
 
     img {
@@ -20,7 +20,7 @@
         button {
             background: none;
             color: var(--cor-primaria);
-            padding: 8px 16px;
+            padding: 8px 10px;
             border-radius: var(--border-radius);
             text-align: center;
             font-weight: bold;
@@ -28,13 +28,13 @@
             border: none;
 
             &:hover {
-                background-color: var(--cor-secundaria-light);
+                background-color: var(--cor-secundaria);
             }
 
             &:last-of-type {
                 border-style: solid;
                 border-radius: var(--border-radius);
-                border-width: 2px;
+                border-width: 1px;
                 border-color: var(--cor-primaria);
             }
         }
