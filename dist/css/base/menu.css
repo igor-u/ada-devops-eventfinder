@@ -3,17 +3,23 @@
     padding: 30px;
     border-radius: var(--border-radius);
     width: 180px;
-    text-align: center;
-    margin-right: 24px;
+    margin-right: 64px;
+
+    .title-arrow {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        cursor: pointer;
+
+        #list-arrow {
+        transition: 0.35s ease;
+        }
+    }
 
     & a {
         display: block;
         padding-block: 4px;
         color: var(--cor-quaternaria);
-
-        &:first-of-type {
-            padding-bottom: 10px;
-        }
 
         &:last-of-type {
             border-bottom: none;
@@ -22,9 +28,10 @@
         &.title {
             color: var(--cor-primaria);
             font-weight: 700;
+            padding-right: 48px;
         }
 
-        &:hover:not(:first-of-type) {
+        &:hover:not(.title) {
             color: var(--cor-secundaria-light);
         }
     }

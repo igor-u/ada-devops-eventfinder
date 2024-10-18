@@ -1,3 +1,10 @@
+enum CategoriaEvento {
+    MUSICAL = "Musical",
+    PALESTRA = "Palestra",
+    TEATRO = "Teatro",
+    WORKSHOP = "Workshop"
+}
+
 enum TipoEvento {
     PRESENCIAL = "Presencial",
     REMOTO = "Remoto",
@@ -5,7 +12,7 @@ enum TipoEvento {
 }
 
 type Evento = {
-    id: string;
+    id: number;
     titulo: string;
     descricao: string;
     data: Date;
@@ -14,20 +21,20 @@ type Evento = {
 }
 
 type Ingresso = {
-    id: string;
+    id: number;
     evento: Evento;
     valor: number;
     pago: boolean;
 }
 
 type Organizador = {
-    id: string;
+    id: number;
     nome: string;
     eventos: Evento[];
 }
 
 type Participante = {
-    id: string;
+    id: number;
     nome: string;
     ingressos: Ingresso[];
     reservas: Reserva[];
@@ -35,7 +42,7 @@ type Participante = {
 }
 
 type Reserva = {
-    id: string;
+    id: number;
     ingresso: Ingresso;
     participante: Participante;
     ativa: boolean
