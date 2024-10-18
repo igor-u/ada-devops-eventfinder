@@ -1,6 +1,6 @@
-const formElement = document.querySelector(".criar-evento form");
+const formElement = document.querySelector(".organizar-evento form");
 let id = 1;
-formElement.addEventListener("submit", function (event) {
+formElement.addEventListener("submit", function(event) {
     event.preventDefault();
     if (!formElement.checkValidity()) {
         alert("Preencha todos os campos!");
