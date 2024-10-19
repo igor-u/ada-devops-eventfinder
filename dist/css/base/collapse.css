@@ -1,15 +1,13 @@
-.collapse:not(.show) {
+input[type='checkbox'] {
     display: none;
 }
 
 .collapsing {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 0.35s ease;
+    transition: max-height 0.35s ease-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .collapsing {
-        transition: none;
-    }
+.toggle:checked + .title-arrow + .collapsing {
+    max-height: 128px;
 }

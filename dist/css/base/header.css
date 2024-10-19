@@ -3,7 +3,7 @@
     color: var(--cor-secundaria);
     font-size: var(--fonte-t3);
     padding-block: 20px;
-    padding: 10px 10px 48px 10px;
+    padding: 10px 20px 48px 10px;
     margin-bottom: 24px;
 
     img {
@@ -57,7 +57,7 @@
                 background-color: var(--cor-secundaria-light);
                 border: none;
                 border-radius: var(--border-radius) 0 0 var(--border-radius);
-                padding-left: 8px;
+                padding: 8px;
             }
 
         .barra-de-procura {
@@ -65,7 +65,7 @@
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
             font-size: var(--fonte-t3);
             color: var(--cor-primaria);
-            padding: 8px 8px;
+            padding: 8px 4px;
             border: none;
             background-color: var(--cor-secundaria-light);
 

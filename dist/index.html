@@ -22,7 +22,7 @@
 
             <p>Facilite a gestão de eventos, reservas e vendas de ingressos.</p>
             <div class="search">
-                <img src="assets/search.svg">
+                <img src="assets/search.svg" class="prevent-select">
                 <input type="text" class="barra-de-procura" placeholder="Procurar eventos">
             </div>
         </section>
@@ -32,11 +32,12 @@
 
         <main class="container-padding flex">
             <nav class="menu">
-                <div class="title-arrow" data-bs-toggle="collapse" data-bs-target="#list" aria-expanded="true" aria-controls="list" onclick="rotateArrow()">
-                    <a href="#" class="title">Categorias</a>
+                <input id="collapse" class="toggle" type="checkbox" checked>
+                <label for="collapse" class="title-arrow prevent-select">
+                    <a class="title">Categorias</a>
                     <img src="assets/list-arrow.svg" id="list-arrow">
-                </div>
-                <div id="list" class="collapse show">
+                </label>
+                <div id="list" class="collapsing">
                     <a href="#">Musical</a>
                     <a href="#">Palestra</a>
                     <a href="#">Teatro</a>
@@ -49,14 +50,14 @@
                 <form action="" method="post" novalidate>
                     <div class="campo form-floating">
 
-                        <input type="text" name="titulo" id="titulo" class="campo-input form-control"
+                        <input type="text" name="titulo" id="titulo" class="campo-input form-control prevent-select"
                             placeholder="Título" required />
                         <label for="titulo">Título</label>
                     </div>
 
                     <form action="" method="post" novalidate>
                         <div class="campo form-floating">
-                            <input type="text" name="descricao" id="descricao" class="campo-input form-control"
+                            <input type="text" name="descricao" id="descricao" class="campo-input form-control prevent-select"
                                 placeholder="Descrição" required />
                             <label for="descricao">Descrição</label>
                         </div>
@@ -86,7 +87,6 @@
             </div>
 
         </main>
-        <script src="js/bootstrap.min.js"></script>
         <script src="js/criar-evento-component.js"></script>
         <script src="js/animation.js"></script>
         <script src="js/eventfinder.js"></script>
