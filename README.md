@@ -14,7 +14,7 @@ O Event Finder é uma aplicação web simples, containerizada com Docker, que pe
 
 ### Pré-requisitos
 
-* **Docker:** Certifique-se de ter o [Docker](https://docs.docker.com/get-started/get-docker/) instalado e em funcionamento em sua máquina. Siga as instruções oficiais para o seu sistema operacional.
+* **Docker:** certifique-se de ter o [Docker](https://docs.docker.com/get-started/get-docker/) instalado e em funcionamento em sua máquina. Siga as instruções oficiais para o seu sistema operacional.
 
 ---
 
