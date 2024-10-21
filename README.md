@@ -1,4 +1,4 @@
-## Event Finder - Sistema de Casa de Eventos
+## Event Finder - Sistema de Gestão de Eventos
 
 ### Introdução
 
